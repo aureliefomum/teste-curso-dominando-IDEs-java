@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Gato {
    private String nome;
    private String cor;
+   private String raça;
    private Integer idade;
 /*
 	public Gato(String nome, String cor, Integer idade) {		
@@ -14,10 +15,11 @@ public class Gato {
 	}
 	
 */
-   public Gato (String nome, String cor, Integer idade) {
+   public Gato (String nome, String cor, Integer idade, String raça) {
 	this.nome = nome;
 	this.cor = cor;
 	this.idade = idade;
+	this.raça = raça;
 }
    
 public String getNome() {
@@ -29,6 +31,9 @@ public void setNome(String nome) {
 public String getCor() {
 	return cor;
 }
+public String getRaça() {
+	return raça;
+}
 public void setCor(String cor) {
 	this.cor = cor;
 }
@@ -37,6 +42,10 @@ public Integer getIdade() {
 }
 public void setIdade(Integer idade) {
 	this.idade = idade;
+}
+
+public void setRaça(String raça) {
+	this.raça = raça;
 }
 
 @Override
